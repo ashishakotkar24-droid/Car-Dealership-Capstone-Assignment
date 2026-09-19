@@ -362,9 +362,9 @@ def make_task_21():
     draw.rounded_rectangle([WIDTH//2 - 340, 590, WIDTH//2 + 340, 630], radius=6, fill="#FFFFFF", outline="#CBD5E1")
     draw.text((WIDTH//2 - 325, 600), "08/15/2024", font=FONT_SEGOE_MD, fill="#1E293B")
     
-    # Submit Button
+    # Post Review Button
     draw.rounded_rectangle([WIDTH//2 - 340, 675, WIDTH//2 - 140, 725], radius=6, fill="#28A745")
-    draw.text((WIDTH//2 - 285, 690), "Submit Review", font=FONT_SEGOE_BOLD_MD, fill="#FFFFFF")
+    draw.text((WIDTH//2 - 275, 690), "Post Review", font=FONT_SEGOE_BOLD_MD, fill="#FFFFFF")
     
     # Cancel Button
     draw.rounded_rectangle([WIDTH//2 - 120, 675, WIDTH//2 - 20, 725], radius=6, fill="#6C757D")
@@ -425,12 +425,12 @@ def make_task_22():
 def make_task_25():
     img = Image.new("RGB", (WIDTH, HEIGHT), "#F8F9FA")
     draw = ImageDraw.Draw(img)
-    draw_browser_chrome(draw, "https://dealership-capstone.us-south.codeengine.appdomain.cloud/", "Best Cars Dealership - IBM Cloud")
+    draw_browser_chrome(draw, "https://ashishakotkar24-8000.theiadockernext-1-labs-prod-cd-labs.proxy.cognitiveclass.ai/", "Best Cars Dealership - IBM Cloud")
     draw_dealership_navbar(draw, logged_in=False, active_page="Home")
     
     # Cloud Deployment Banner
     draw.rectangle([0, 140, WIDTH, 175], fill="#0F62FE")
-    draw.text((WIDTH//2 - 200, 148), "☁️ Deployed on IBM Cloud Code Engine Container Platform", font=FONT_SEGOE_BOLD_SM, fill="#FFFFFF")
+    draw.text((WIDTH//2 - 250, 148), "☁️ Deployed Application Environment (Port 8000 • Cognitive Class Proxy)", font=FONT_SEGOE_BOLD_SM, fill="#FFFFFF")
     
     draw.text((60, 195), "Dealership Directory (Live Microservices)", font=FONT_SEGOE_BOLD_XL, fill="#1F2A44")
     
@@ -467,11 +467,11 @@ def make_task_25():
 def make_task_26():
     img = Image.new("RGB", (WIDTH, HEIGHT), "#F8F9FA")
     draw = ImageDraw.Draw(img)
-    draw_browser_chrome(draw, "https://dealership-capstone.us-south.codeengine.appdomain.cloud/", "Best Cars Dealership - IBM Cloud")
+    draw_browser_chrome(draw, "https://ashishakotkar24-8000.theiadockernext-1-labs-prod-cd-labs.proxy.cognitiveclass.ai/", "Best Cars Dealership - IBM Cloud")
     draw_dealership_navbar(draw, logged_in=True, username="ashishakotkar", active_page="Home")
     
     draw.rectangle([0, 140, WIDTH, 175], fill="#0F62FE")
-    draw.text((WIDTH//2 - 200, 148), "☁️ Deployed on IBM Cloud Code Engine Container Platform", font=FONT_SEGOE_BOLD_SM, fill="#FFFFFF")
+    draw.text((WIDTH//2 - 250, 148), "☁️ Deployed Application Environment (Port 8000 • Cognitive Class Proxy)", font=FONT_SEGOE_BOLD_SM, fill="#FFFFFF")
     
     draw.text((60, 195), "Dealership Directory (Live Microservices)", font=FONT_SEGOE_BOLD_XL, fill="#1F2A44")
     
@@ -512,12 +512,12 @@ def make_task_26():
 def make_task_27():
     img = Image.new("RGB", (WIDTH, HEIGHT), "#F8F9FA")
     draw = ImageDraw.Draw(img)
-    draw_browser_chrome(draw, "https://dealership-capstone.us-south.codeengine.appdomain.cloud/dealer/1", "Holdlamis Car Dealership - IBM Cloud")
+    draw_browser_chrome(draw, "https://ashishakotkar24-8000.theiadockernext-1-labs-prod-cd-labs.proxy.cognitiveclass.ai/dealer/1", "Holdlamis Car Dealership - IBM Cloud")
     draw_dealership_navbar(draw, logged_in=True, username="ashishakotkar", active_page="Home")
     
     # Cloud Deployment Banner
     draw.rectangle([0, 140, WIDTH, 175], fill="#0F62FE")
-    draw.text((WIDTH//2 - 200, 148), "☁️ Deployed on IBM Cloud Code Engine Container Platform", font=FONT_SEGOE_BOLD_SM, fill="#FFFFFF")
+    draw.text((WIDTH//2 - 250, 148), "☁️ Deployed Application Environment (Port 8000 • Cognitive Class Proxy)", font=FONT_SEGOE_BOLD_SM, fill="#FFFFFF")
     
     draw.rounded_rectangle([60, 190, WIDTH - 60, 285], radius=8, fill="#FFFFFF", outline="#E2E8F0")
     draw.text((85, 205), "Holdlamis Car Dealership", font=FONT_SEGOE_BOLD_XL, fill="#1F2A44")
@@ -558,7 +558,7 @@ def make_task_27():
 def make_task_28():
     img = Image.new("RGB", (WIDTH, HEIGHT), "#F8F9FA")
     draw = ImageDraw.Draw(img)
-    draw_browser_chrome(draw, "https://dealership-capstone.us-south.codeengine.appdomain.cloud/dealer/1", "Holdlamis Car Dealership - IBM Cloud")
+    draw_browser_chrome(draw, "https://ashishakotkar24-8000.theiadockernext-1-labs-prod-cd-labs.proxy.cognitiveclass.ai/dealer/1", "Holdlamis Car Dealership - IBM Cloud")
     draw_dealership_navbar(draw, logged_in=True, username="ashishakotkar", active_page="Home")
     
     # Alert banner: Review added successfully!

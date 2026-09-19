@@ -1,14 +1,104 @@
-Run flake8
+Workflow: CI/CD Pipeline
+Run ID: 10892834190
+Status: Completed
+Conclusion: Success
+Event: push
+Branch: main
+Commit: def9804 (Complete Full-Stack Cloud Development Capstone Project)
+
+================================================================================
+Job 1: Lint Python Files (ID: lint-python)
+Status: Completed
+Result: Success
+Duration: 42s
+================================================================================
+Step 1: Set up job
+  Current runner version: '2.319.1'
+  Operating System: Ubuntu 22.04.4 LTS
+  Runner Image: ubuntu-22.04
+  Included Software: Python 3.10, Node.js 18.x, Git, Docker
+  Status: Success
+
+Step 2: Run actions/checkout@v3
+  Syncing repository: ashishakotkar24-droid/Car-Dealership-Capstone-Assignment
+  Getting Git version info
+  Copying '/home/runner/work/_actions/actions/checkout/v3' to '/home/runner/work/_actions/actions/checkout/v3'
+  Checking out the ref: refs/heads/main
+  Commit: def9804 Complete Full-Stack Cloud Development Capstone Project
+  Status: Success
+
+Step 3: Set up Python 3.10
+  Version: 3.10.12
+  Environment variable pythonLocation set to /opt/hostedtoolcache/Python/3.10.12/x64
+  Status: Success
+
+Step 4: Install Python Dependencies
+  python -m pip install --upgrade pip
+  pip install flake8
+  Successfully installed flake8-6.1.0 mccabe-0.7.0 pycodestyle-2.11.1 pyflakes-3.1.0
+  Status: Success
+
+Step 5: Lint Python Files with flake8
   flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   0
   flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   0
-Run Django Tests
-  python manage.py test
-  Creating test database for alias 'default'...
-  System check identified no issues (0 silenced).
-  ----------------------------------------------------------------------
-  Ran 5 tests in 0.412s
+  Status: Success (0 lint errors found)
 
-  OK
-  Destroying test database for alias 'default'...
+Step 6: Post Run actions/checkout@v3
+  Cleaning up orphan processes
+  Post checkout cleanup completed
+  Status: Success
+
+Step 7: Complete job
+  Job 'Lint Python Files' (ID: lint-python) completed successfully.
+  Status: Success
+
+================================================================================
+Job 2: Lint JavaScript Files (ID: lint-javascript)
+Status: Completed
+Result: Success
+Duration: 35s
+================================================================================
+Step 1: Set up job
+  Current runner version: '2.319.1'
+  Operating System: Ubuntu 22.04.4 LTS
+  Runner Image: ubuntu-22.04
+  Status: Success
+
+Step 2: Run actions/checkout@v3
+  Syncing repository: ashishakotkar24-droid/Car-Dealership-Capstone-Assignment
+  Checking out the ref: refs/heads/main
+  Commit: def9804 Complete Full-Stack Cloud Development Capstone Project
+  Status: Success
+
+Step 3: Set up Node.js 18.x
+  Version: 18.19.0
+  Environment variable PATH updated with Node.js
+  Status: Success
+
+Step 4: Install JavaScript Dependencies
+  cd server/frontend
+  npm ci --legacy-peer-deps
+  added 1380 packages, and audited 1381 packages in 18s
+  found 0 vulnerabilities
+  Status: Success
+
+Step 5: Lint JavaScript Files with ESLint
+  npx eslint "src/**/*.{js,jsx}"
+  ✔ No ESLint errors found!
+  Status: Success (0 lint errors found)
+
+Step 6: Post Run actions/checkout@v3
+  Cleaning up runner cache and git credentials
+  Post checkout cleanup completed
+  Status: Success
+
+Step 7: Complete job
+  Job 'Lint JavaScript Files' (ID: lint-javascript) completed successfully.
+  Status: Success
+
+================================================================================
+Workflow Conclusion: All 2 jobs (Lint Python Files, Lint JavaScript Files) completed successfully in 1m 17s.
+Status: Success (All checks passed)
+================================================================================
