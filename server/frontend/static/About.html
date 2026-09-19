@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Best Cars Dealership</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .team-card img {
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: calc(0.375rem - 1px);
+            border-top-right-radius: calc(0.375rem - 1px);
+        }
+        .hero-banner {
+            background: linear-gradient(135deg, #1f2a44 0%, #0077b6 100%);
+            color: #ffffff;
+            padding: 50px 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-info" href="/">🚗 Best Cars Dealership</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-info" aria-current="page" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="/login" class="btn btn-outline-info me-2">Login</a>
+                    <a href="/register" class="btn btn-info text-white">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Hero Section -->
+        <div class="hero-banner text-center shadow-sm">
+            <h1 class="display-5 fw-bold">About Best Cars Dealership</h1>
+            <p class="lead col-lg-8 mx-auto mt-3">
+                Connecting motorists across North America with certified pre-owned and new vehicles through transparent reviews, AI-powered sentiment verification, and exceptional customer service since 1998.
+            </p>
+        </div>
+
+        <!-- Mission & Values -->
+        <div class="row mb-5 text-center g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="text-primary mb-3"><i class="fs-1">🏆</i></div>
+                    <h4 class="fw-bold">Integrity First</h4>
+                    <p class="text-muted">Every listing, inspection, and customer review is authenticated to ensure genuine automotive reliability.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="text-primary mb-3"><i class="fs-1">⚡</i></div>
+                    <h4 class="fw-bold">Modern Microservices</h4>
+                    <p class="text-muted">High-performance cloud application delivering instant vehicle search, nationwide branch filtering, and real-time sentiment scoring.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="text-primary mb-3"><i class="fs-1">🤝</i></div>
+                    <h4 class="fw-bold">Customer Focus</h4>
+                    <p class="text-muted">Over 25 years of customer-first guidance across all 50 states, backed by verified buyer warranties.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leadership Team -->
+        <h2 class="text-center fw-bold mb-4">Meet Our Executive Leadership Team</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Leader 1 -->
+            <div class="col">
+                <div class="card team-card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60" class="card-img-top" alt="David Sterling">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">David Sterling</h5>
+                        <p class="text-primary fw-semibold mb-1">Chief Executive Officer</p>
+                        <p class="card-text text-muted small">Over 20 years leading automotive retail operations with a deep passion for digital transformation and customer transparency.</p>
+                        <a href="mailto:david.sterling@bestcarsdealership.com" class="text-decoration-none small text-muted">✉️ david.sterling@bestcarsdealership.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leader 2 -->
+            <div class="col">
+                <div class="card team-card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60" class="card-img-top" alt="Sarah Jenkins">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Sarah Jenkins</h5>
+                        <p class="text-primary fw-semibold mb-1">Head of Engineering & Cloud</p>
+                        <p class="card-text text-muted small">Architect behind our microservices stack on IBM Cloud, ensuring seamless integration between Django, Node, and AI services.</p>
+                        <a href="mailto:sarah.jenkins@bestcarsdealership.com" class="text-decoration-none small text-muted">✉️ sarah.jenkins@bestcarsdealership.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leader 3 -->
+            <div class="col">
+                <div class="card team-card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60" class="card-img-top" alt="Marcus Reynolds">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Marcus Reynolds</h5>
+                        <p class="text-primary fw-semibold mb-1">Director of Dealer Relations</p>
+                        <p class="card-text text-muted small">Fosters trust between retail partners and buyers, ensuring certified dealership standards nationwide.</p>
+                        <a href="mailto:marcus.reynolds@bestcarsdealership.com" class="text-decoration-none small text-muted">✉️ marcus.reynolds@bestcarsdealership.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">© 2024 Best Cars Dealership Inc. All rights reserved.</p>
+            <small class="text-secondary">Full-Stack Cloud Development Capstone Project</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

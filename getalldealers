@@ -1,0 +1,52 @@
+curl -X GET http://localhost:3030/fetchDealers
+
+[
+  {
+    "id": 1,
+    "city": "El Paso",
+    "state": "Texas",
+    "st": "TX",
+    "address": "322 Faraday Crossing",
+    "zip": "79915",
+    "lat": 31.7208,
+    "long": -106.3507,
+    "short_name": "Holdlamis",
+    "full_name": "Holdlamis Car Dealership"
+  },
+  {
+    "id": 2,
+    "city": "Minneapolis",
+    "state": "Minnesota",
+    "st": "MN",
+    "address": "400 Valley Edge Park",
+    "zip": "55416",
+    "lat": 44.957,
+    "long": -93.3447,
+    "short_name": "Temp",
+    "full_name": "Temp Car Dealership"
+  },
+  {
+    "id": 3,
+    "city": "Topeka",
+    "state": "Kansas",
+    "st": "KS",
+    "address": "78280 Grim Avenue",
+    "zip": "66606",
+    "lat": 39.0429,
+    "long": -95.7697,
+    "short_name": "Sub-Ex",
+    "full_name": "Sub-Ex Car Dealership"
+  },
+  {
+    "id": 4,
+    "city": "Wichita",
+    "state": "Kansas",
+    "st": "KS",
+    "address": "94 Derek Knoll",
+    "zip": "67209",
+    "lat": 37.6727,
+    "long": -97.4395,
+    "short_name": "Solarbreeze",
+    "full_name": "Solarbreeze Car Dealership"
+  }
+]

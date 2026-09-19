@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Best Cars Dealership</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #1f2a44 0%, #0077b6 100%);
+            color: #ffffff;
+            padding: 45px 20px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+        .contact-icon {
+            font-size: 2rem;
+            color: #0077b6;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navigation Bar (Active on Contact Us) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-info" href="/">🚗 Best Cars Dealership</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-info" aria-current="page" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="/login" class="btn btn-outline-info me-2">Login</a>
+                    <a href="/register" class="btn btn-info text-white">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Hero Header -->
+        <div class="contact-hero text-center shadow-sm">
+            <h1 class="display-5 fw-bold">Get In Touch With Our Team</h1>
+            <p class="lead col-lg-8 mx-auto mt-2">
+                Have questions regarding a vehicle listing, branch inquiries, or review verification? We're here to assist you 24/7.
+            </p>
+        </div>
+
+        <div class="row g-5">
+            <!-- Contact Information Cards & Images -->
+            <div class="col-lg-5">
+                <div class="card shadow-sm border-0 mb-4 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=600&auto=format&fit=crop&q=60" class="card-img-top" alt="Dealership Customer Support Center" style="height: 220px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-3">Headquarters & Support</h4>
+                        
+                        <div class="d-flex align-items-start mb-3">
+                            <span class="contact-icon me-3">📍</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Corporate Address</h6>
+                                <p class="text-muted mb-0">100 Enterprise Way, Suite 400<br>Austin, TX 78701, USA</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <span class="contact-icon me-3">📞</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Toll-Free Customer Support</h6>
+                                <p class="text-muted mb-0">+1 (800) 555-CARS (2277)<br>Mon - Sat: 8:00 AM – 8:00 PM EST</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <span class="contact-icon me-3">✉️</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Direct Email</h6>
+                                <p class="text-muted mb-0"><a href="mailto:support@bestcarsdealership.com" class="text-decoration-none">support@bestcarsdealership.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <span class="contact-icon me-3">🤝</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Dealer Relations Team</h6>
+                                <p class="text-muted mb-0"><a href="mailto:dealers@bestcarsdealership.com" class="text-decoration-none">dealers@bestcarsdealership.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Inquiry Form -->
+            <div class="col-lg-7">
+                <div class="card shadow-sm border-0 p-4">
+                    <h3 class="fw-bold mb-3">Send Us a Direct Message</h3>
+                    <p class="text-muted small mb-4">Fill out the contact form below and a regional dealer coordinator will respond within 24 hours.</p>
+
+                    <form action="#" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-semibold">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="johndoe@example.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label fw-semibold">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="(555) 000-0000">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="subject" class="form-label fw-semibold">Inquiry Type</label>
+                                <select class="form-select" id="subject">
+                                    <option selected>Customer Review Inquiry</option>
+                                    <option>Dealership Branch Partnership</option>
+                                    <option>Vehicle Technical Details</option>
+                                    <option>General Support</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="How can our dealership network help you today?" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">© 2024 Best Cars Dealership Inc. All rights reserved.</p>
+            <small class="text-secondary">Full-Stack Cloud Development Capstone Project</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
